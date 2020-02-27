@@ -15,7 +15,7 @@ yarn add router5-tabs-react
 ## Features
 
 :paperclip: Accessibility and semantics  
-:earth_asia: Translation support  
+:lock: Supports stateful URLs  
 :hamster: Tiny component (< 120 lines, ~3kb gzipped)  
 :scissors: Customizable icons  
 :heart: Tailwind default styles  

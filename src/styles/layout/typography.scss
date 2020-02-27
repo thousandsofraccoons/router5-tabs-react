@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Content';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Content Regular'), url('Content-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Content';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Content Bold'), url('Content-Bold.woff') format('woff');
+}
+
+* {
+  font-family: Content-font, Roboto, sans-serif;
+}

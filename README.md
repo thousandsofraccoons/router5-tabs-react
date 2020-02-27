@@ -16,10 +16,10 @@ yarn add router5-tabs-react
 
 :paperclip: Accessibility and semantics  
 :earth_asia: Translation support  
-:hamster: Tiny component (< 150 lines, ~3kb gzipped)  
+:hamster: Tiny component (< 120 lines, ~3kb gzipped)  
 :scissors: Customizable icons  
 :heart: Tailwind default styles  
-:chart_with_upwards_trend: Content won't be deleted - only hidden
+:chart_with_upwards_trend: Content won't be deleted - only hidden  
 :mag: Provides data-cy prop for e2e testing
 
 ## Usage

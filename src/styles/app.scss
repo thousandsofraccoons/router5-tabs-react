@@ -1,0 +1,11 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import './layout/typography.scss';
+
+.transition {
+  transition: all 0.3s ease;
+}

@@ -22,15 +22,10 @@ export const useTabs = (tabs: Array<Tab>) => {
   }, [])
 
   useEffect(() => {
-    let isNotCurrent = currentTab !== params.tab
-
-    if (isNotCurrent) {
+    if (currentTab !== params.tab) {
       const temp = { ...params }
       temp.tab = currentTab
-
-      if (isNotCurrent) {
-        navigate(name, temp)
-      }
+      navigate(name, temp)
     }
   }, [currentTab, params.tab, navigate, name, params])
 

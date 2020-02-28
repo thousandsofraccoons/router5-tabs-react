@@ -38,6 +38,11 @@ export const Profile = () => {
 }
 ```
 
+### Acknowledgements
+
+Dee Money  
+[<img src="https://avatars3.githubusercontent.com/u/52338586?s=200&v=4" alt="Dee Money" width="100" height="100">](https://github.com/dee-money)
+
 ## License
 
 MIT © [https://github.com/thousandsofraccoons](https://github.com/thousandsofraccoons)

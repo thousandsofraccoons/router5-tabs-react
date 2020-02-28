@@ -2,10 +2,11 @@ import React, { FunctionComponent } from 'react'
 import { TabsProps } from './typings'
 import { useTabs } from './hooks'
 
-export const Tabs: FunctionComponent<TabsProps> = ({
+const Tabs: FunctionComponent<TabsProps> = ({
   children,
   tabs,
   dataCy = 'tabs',
+  router,
   classes: {
     wrapper = 'w-full',
     contentSection,
@@ -17,7 +18,8 @@ export const Tabs: FunctionComponent<TabsProps> = ({
   } = {},
 }) => {
   const { handleKeyboard, childrenIndex, isCurrent, setCurrentTab } = useTabs(
-    tabs
+    tabs,
+    router
   )
 
   function TabNavigation(): React.ReactElement {
@@ -67,3 +69,5 @@ export const Tabs: FunctionComponent<TabsProps> = ({
     </div>
   )
 }
+
+export default Tabs

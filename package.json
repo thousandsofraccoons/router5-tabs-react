@@ -1,14 +1,14 @@
 {
-  "name": "router5-breadcrumbs-react",
-  "version": "0.1.0",
+  "name": "router5-tabs-react",
+  "version": "0.1.1",
   "main": "build/index.js",
   "scripts": {
     "start:css": "postcss src/styles/app.scss -o src/styles/styles.css -w",
     "start:js": "node scripts/start.js",
     "start": "npm-run-all -p start:js start:css ",
-    "prepack": "postcss src/styles/app.scss -o src/styles/styles.css",
-    "pack": "node scripts/build.js",
-    "prebuild": "postcss src/styles/app.scss -o src/styles/styles.css",
+    "prepublish": "postcss src/styles/app.scss -o src/styles/styles.css",
+    "compile": "node scripts/build.js",
+    "precompile": "postcss src/styles/app.scss -o src/styles/styles.css",
     "build": "node scripts/demo.js",
     "servedemo": "node serve-demo.js",
     "test": "node scripts/test.js"

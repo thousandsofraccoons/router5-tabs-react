@@ -8,6 +8,7 @@ export type TabsProps = {
   children: Array<React.ReactElement>
   tabs: Array<Tab>
   dataCy?: string
+  router?: () => void
   classes?: {
     wrapper?: string
     contentSection?: string

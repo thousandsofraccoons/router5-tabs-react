@@ -1,6 +1,6 @@
 # router5-tabs-react
 
-<img src="public/banner-01.jpg" alt="React tabs component download" width="100%">
+<img src="https://github.com/thousandsofraccoons/router5-tabs-react/raw/master/public/banner-01.jpg" alt="React tabs component download" width="100%">
 
 > Tabs component, based on router5 and react which provides minimalistic interface for toggleable tabbed navigation.
 

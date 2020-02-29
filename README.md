@@ -4,7 +4,7 @@
 
 <img src="https://github.com/thousandsofraccoons/router5-tabs-react/raw/master/public/banner-01.jpg" alt="React tabs component download" width="100%">
 
-[![NPM](https://img.shields.io/npm/v/router5-tabs-react.svg)](https://www.npmjs.com/package/router5-tabs-react) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) ![npm](https://img.shields.io/npm/dm/@thousandsofraccoons/router5-tabs-react)
+[![NPM](https://img.shields.io/npm/v/router5-tabs-react.svg)](https://www.npmjs.com/package/router5-tabs-react) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) ![npm](https://img.shields.io/npm/dt/router5-tabs-react?style=plastic)
 
 ## Install
 

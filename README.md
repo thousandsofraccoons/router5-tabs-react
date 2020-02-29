@@ -1,8 +1,8 @@
 # router5-tabs-react
 
-<img src="https://github.com/thousandsofraccoons/router5-tabs-react/raw/master/public/banner-01.jpg" alt="React tabs component download" width="100%">
-
 > Tabs component, based on router5 and react which provides minimalistic interface for toggleable tabbed navigation.
+
+<img src="https://github.com/thousandsofraccoons/router5-tabs-react/raw/master/public/banner-01.jpg" alt="React tabs component download" width="100%">
 
 [![NPM](https://img.shields.io/npm/v/router5-tabs-react.svg)](https://www.npmjs.com/package/router5-tabs-react) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) ![npm](https://img.shields.io/npm/dm/@thousandsofraccoons/router5-tabs-react)
 

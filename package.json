@@ -7,7 +7,7 @@
     "start:js": "node scripts/start.js",
     "start": "npm-run-all -p start:js start:css ",
     "prepublish": "postcss src/styles/app.scss -o src/styles/styles.css",
-    "compile": "node scripts/build.js",
+    "compile": "node scripts/build.ts",
     "precompile": "postcss src/styles/app.scss -o src/styles/styles.css",
     "build": "node scripts/demo.js",
     "servedemo": "node serve-demo.js",

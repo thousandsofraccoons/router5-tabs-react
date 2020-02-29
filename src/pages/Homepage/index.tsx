@@ -1,7 +1,8 @@
+import { useRoute } from 'react-router5'
 import React from 'react'
 import { Hero, Features, Iframes, Footer, Badge } from '../../components'
 import { hero, features, tabs } from './data'
-import { Tabs } from '../../lib'
+// import Tabs from '../../../build'
 
 export const Homepage = props => {
   return (
@@ -10,11 +11,14 @@ export const Homepage = props => {
       <main className='container mx-auto'>
         <Features features={features} />
         <hr />
-        <Tabs tabs={tabs}>
+        {/* <Tabs
+          tabs={tabs}
+          // router={useRoute}
+        >
           <div>1</div>
           <div>2</div>
           <div>3</div>
-        </Tabs>
+        </Tabs> */}
         <Iframes />
         <div
           className='fb-comments px-10'

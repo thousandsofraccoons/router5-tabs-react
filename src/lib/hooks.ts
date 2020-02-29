@@ -1,14 +1,17 @@
-import { useRoute } from 'react-router5'
-import { useState, useEffect, KeyboardEvent, createRef, useRef } from 'react'
+import { useState, useEffect, KeyboardEvent } from 'react'
 import { Tab } from './typings'
 
-export const useTabs = (tabs: Array<Tab>) => {
+export const useTabs = (tabs: Array<Tab>, router = () => null) => {
   const {
     route: { name, params },
     router: { navigate },
-  } = useRoute()
+  } = router() || {
+    route: { name: null, params: { tab: null } },
+    router: { navigate: null },
+  }
+
   const [currentTab, setCurrentTab] = useState<string>(
-    params.tab || tabs[0].name
+    params?.tab || tabs[0].name
   )
 
   useEffect(() => {
@@ -22,10 +25,10 @@ export const useTabs = (tabs: Array<Tab>) => {
   }, [])
 
   useEffect(() => {
-    if (currentTab !== params.tab) {
-      const temp = { ...params }
+    if (currentTab !== params?.tab) {
+      const temp = { ...params } || { tab: null }
       temp.tab = currentTab
-      navigate(name, temp)
+      navigate && navigate(name, temp)
     }
   }, [currentTab, params.tab, navigate, name, params])
 

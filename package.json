@@ -4,14 +4,14 @@
   "main": "build/index.js",
   "scripts": {
     "start:css": "postcss src/styles/app.scss -o src/styles/styles.css -w",
-    "start:js": "node scripts/start.js",
-    "start": "npm-run-all -p start:js start:css ",
+    "start:js": "node scripts/start.ts",
+    "start": "npm-run-all -p start:ts start:css ",
     "prepublish": "postcss src/styles/app.scss -o src/styles/styles.css",
     "compile": "node scripts/build.ts",
     "precompile": "postcss src/styles/app.scss -o src/styles/styles.css",
-    "build": "node scripts/demo.js",
-    "servedemo": "node serve-demo.js",
-    "test": "node scripts/test.js"
+    "build": "node scripts/demo.ts",
+    "servedemo": "node serve-demo.ts",
+    "test": "node scripts/test.ts"
   },
   "license": "MIT",
   "dependencies": {

@@ -28,6 +28,20 @@ yarn add router5-tabs-react
 import Tabs from 'router5-tabs-react'
 
 export const Profile = () => {
+  const tabs = [
+    {
+      name: 'user',
+      label: 'User',
+    },
+    {
+      name: 'settings',
+      label: 'Settings',
+    },
+    {
+      name: 'billing',
+      label: 'Billing',
+    },
+  ]
   return (
     <Tabs>
       <User />

@@ -6,7 +6,6 @@ const Tabs: FunctionComponent<TabsProps> = ({
   children,
   tabs,
   dataCy = 'tabs',
-  router,
   classes: {
     wrapper = 'w-full',
     contentSection,
@@ -18,8 +17,7 @@ const Tabs: FunctionComponent<TabsProps> = ({
   } = {},
 }) => {
   const { handleKeyboard, childrenIndex, isCurrent, setCurrentTab } = useTabs(
-    tabs,
-    router
+    tabs
   )
 
   function TabNavigation(): React.ReactElement {

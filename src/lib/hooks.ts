@@ -1,14 +1,12 @@
 import { useState, useEffect, KeyboardEvent } from 'react'
 import { Tab } from './typings'
+import { useRoute } from 'react-router5'
 
-export const useTabs = (tabs: Array<Tab>, router = () => null) => {
+export const useTabs = (tabs: Array<Tab>) => {
   const {
     route: { name, params },
     router: { navigate },
-  } = router() || {
-    route: { name: null, params: { tab: null } },
-    router: { navigate: null },
-  }
+  } = useRoute()
 
   const [currentTab, setCurrentTab] = useState<string>(
     params?.tab || tabs[0].name

@@ -7,13 +7,13 @@ const Tabs: FunctionComponent<TabsProps> = ({
   tabs,
   dataCy = 'tabs',
   classes: {
-    wrapper = 'w-full',
-    contentSection,
+    wrapper = 'tabs-wrapper w-full',
+    contentSection = 'tabs-content-section',
     tab = 'tab-label flex items-center py-4 px-12 rounded-t-lg',
-    svgIcon = 'fill-current',
-    buttons = 'flex relative py-4',
-    tabInactive = 'hover:bg-gray-600 hover:text-white cursor-pointer transition',
-    tabActive = 'bg-gray-900 text-white hover:bg-gray-800',
+    svgIcon = 'tabs-svg-icon fill-current',
+    buttons = 'tabs-buttons flex relative py-4',
+    tabInactive = 'tab-inactive hover:bg-gray-600 hover:text-white cursor-pointer transition',
+    tabActive = 'tab-active bg-gray-900 text-white hover:bg-gray-800',
   } = {},
 }) => {
   const { handleKeyboard, childrenIndex, isCurrent, setCurrentTab } = useTabs(

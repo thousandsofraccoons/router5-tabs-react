@@ -4,7 +4,7 @@
   "main": "build/index.js",
   "scripts": {
     "start:css": "postcss src/styles/app.scss -o src/styles/styles.css -w",
-    "start:js": "node scripts/start.ts",
+    "start:ts": "node scripts/start.ts",
     "start": "npm-run-all -p start:ts start:css ",
     "prepublish": "postcss src/styles/app.scss -o src/styles/styles.css",
     "compile": "node scripts/build.ts",
